@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manuel Shopping Car</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="img/logo1.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-cart">
+                            <div id="cart">
+                                    
+                                    <table id="list-cart" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Name</th>
+                                                <th>Price</th>
+                                                <th>Quantity</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="empty-cart" class="button u-full-width">Empty Cart</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="hero">
+        <div class="container">
+            <div class="row">
+                    <div class="six columns">
+                        <div class="content-hero">
+                                <h2>Learn Something New</h2>
+                                <p>All the Courses on $15</p>
+                                <form autocomplete="off" action="#" id="Searching" method="post" class="form">
+                                    <input class="u-full-width" type="text" placeholder="What do you like to Learn?" id="searcher">
+                                    <input type="submit" id="submit-searcher" class="submit-searcher">
+                                </form>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="bar">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns icon icono1">
+                        <p>20,000 Online Courses <br>
+                            Explore the latest topics</p>
+                    </div>
+                    <div class="four columns icon icono2">
+                        <p>Expert Instructors <br>
+                            Learn with different styles</p>
+                    </div>
+                    <div class="four columns icon icono3">
+                        <p>Lifetime access <br>
+                            Learn at your own pace</p>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="list-courses" class="container">
+        <h1 id="header" class="encabezado">Online Courses</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>HTML5, CSS3, JavaScript for Beginners</h4>
+                        <p>Manuel Morales</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="1">Add to the Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course2.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>JavaScript Full Stack Course</h4>
+                            <p>Manuel Morales</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="2">Add to the Cart</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course3.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Java and Springboot Course</h4>
+                            <p>Carlos Peña</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="3">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course4.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Python and DJango Framework</h4>
+                        <p>Carlos Peña</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="4">Add to the Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course5.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Node.js Full Course</h4>
+                            <p>Manuel Morales</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="5">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course6.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>A Complete Wordpress Developer Course</h4>
+                            <p>Kervis Vasquez</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="6">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/course7.jpg" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Java Oriented to The Web Course</h4>
+                        <p>Rasmus Linux</p>
+                        <img src="img/estrellas.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" class="u-full-width button-primary button input add-cart" data-id="7">Add to the Cart</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course8.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>React + TypeScript + SASS Full Course</h4>
+                            <p>Carlos Peña</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="8">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/course9.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Learn to Use Angular JS Course</h4>
+                            <p>Manuel Morales</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="9">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/course10.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Laravel Full Stack Course</h4>
+                            <p>Juan Pedro</p>
+                            <img src="img/estrellas.png">
+                            <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                            <a href="#" class="u-full-width button-primary button input add-cart" data-id="10">Add to the Cart</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course11.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>PHP Symphoni Full Course, Making Your Our Apps</h4>
+                                <p>Juan Pedro</p>
+                                <img src="img/estrellas.png">
+                                <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-cart" data-id="11">Add to the Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four columns">
+                        <div class="card">
+                            <img src="img/course12.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>The Data Science for Web Development Complete Course</h4>
+                                <p>Cynthia Bolivar</p>
+                                <img src="img/estrellas.png">
+                                <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                                <a href="#" class="u-full-width button-primary button input add-cart" data-id="12">Add to the Cart</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+    </div>  
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                    <div class="four columns">
+                            <nav id="principal" class="menu">
+                                <a class="enlace" href="#">Make your on busisness</a>
+                                <a class="enlace" href="#">Become yourself on an instructor.</a>
+                                <a class="enlace" href="#">Mobile Apps</a>
+                                <a class="enlace" href="#">Suport</a>
+                                <a class="enlace" href="#">Themes</a>
+                            </nav>
+                    </div>
+                    <div class="four columns">
+                            <nav id="secundaria" class="menu">
+                                <a class="enlace" href="#">Who we are?</a>
+                                <a class="enlace" href="#">Job</a>
+                                <a class="enlace" href="#">Blog</a>
+                            </nav>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

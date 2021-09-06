@@ -1,0 +1,234 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f5f3f3;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+header {
+  padding: 20px 0 0 0;
+  background: white;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  header {
+    text-align: left;
+  }
+}
+.erase-course {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+#hero {
+  background-image: url(../img/fon.jpg);
+  height: 350px;
+  background-size: cover;
+  transition: background-image 5s ease-in-out;
+}
+#header {
+  margin: 30px 0;
+}
+.submenu {
+  position: relative;
+}
+
+.submenu #cart {
+  display: none;
+}
+.submenu:hover #cart {
+  display: block;
+  position: absolute;
+  right: 0;
+
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+.empty {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+.content-hero {
+  margin-top: 80px;
+  color: rgb(75, 65, 65);
+}
+.content-hero form {
+  position: relative;
+  margin-bottom: 0;
+}
+.content-hero form #searcher {
+  height: 50px;
+  margin-bottom: 0;
+}
+.content-hero form .submit-searcher {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0;
+  display: block;
+  text-indent: -9999px;
+  width: 50px;
+  background-image: url(../img/lupa.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  border: none;
+}
+.content-hero h2,
+.content-hero p {
+  color: goldenrod;
+  font-weight: bold;
+}
+.bar {
+  padding: 20px 0;
+  background: #741d51; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #741d51 0%,
+    #e44e52 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+}
+
+.bar p {
+  margin: 0;
+  color: rgb(235, 173, 173);
+}
+.icon {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  .icon {
+    margin-bottom: 0;
+  }
+}
+.icono1 {
+  background-image: url(../img/icono1.png);
+}
+.icono2 {
+  background-image: url(../img/icono2.png);
+}
+.icono3 {
+  background-image: url(../img/icono3.png);
+}
+
+#list-courses .row {
+  margin-bottom: 20px;
+}
+.add-cart {
+  margin: 10px 0;
+}
+.shop-img {
+  width: 10rem;
+  height: 9.8rem;
+}
+.eraser {
+  color: blue;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 1.1rem;
+}
+.card {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+}
+.card .imagen-curso {
+  width: 25rem;
+  height: 20rem;
+}
+@media (min-width: 550px) {
+  .card {
+    text-align: left;
+  }
+}
+.golden-button {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: gold;
+}
+.info-card {
+  padding: 10px 20px;
+}
+
+.info-card p,
+.card h4 {
+  margin-bottom: 5px;
+}
+.info-card .price {
+  text-decoration: line-through;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.info-card .price span {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+}
+.footer .menu a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+/* autocomplete bar */
+
+#result {
+  border: 1px dotted #ccc;
+  padding: 3px;
+}
+#result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#result ul li {
+  padding: 5px 0;
+}
+#result ul li:hover {
+  background: #eee;
+}
